@@ -1,0 +1,16 @@
+name: BotWalkers
+version: 2.0.0
+main: me.botwalkers.BotPlugin
+api-version: '1.21.11'
+depend: [Citizens]
+description: Spawns real-player-style bots that wander around with random skins, names and armour.
+commands:
+  bots:
+    description: Spawn and manage wandering bots
+    usage: /bots <spawn|armour|clear> ...
+    aliases: [botwalkers, bw]
+    permission: botwalkers.use
+permissions:
+  botwalkers.use:
+    description: Use the /bots command
+    default: op
